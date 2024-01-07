@@ -21,11 +21,11 @@ There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper techn
 
 6. While the docker container is running, run cmd: 
 
-    ``docker ps to see what containers are running - copy the container ID for Jenkins, like 8f7c957e19fd``
+    ``docker ps`` to see what containers are running - copy the container ID for Jenkins, like ``8f7c957e19fd``
 
 7. Run command: 
 
-    ``docker exec -it -u 0 8f7c957e19fd /bin/bash to open an interactive terminal within the Docker Container as root (user 0)``
+    ``docker exec -it -u 0 8f7c957e19fd /bin/bash`` to open an interactive terminal within the Docker Container as root (user 0)
 
 8. Run command(s): 
 
