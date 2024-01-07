@@ -3,7 +3,7 @@ from Janggi import JanggiGame
 
 
 class TestCase(unittest.TestCase):
-    """TestCase class inherits from unittest.TestCase to form different methods as test cases. """
+    """TestCase class inherits from unittest.TestCase to form different methods as test cases."""
 
     def test_blueGuard(self):
         j = JanggiGame()
@@ -51,7 +51,9 @@ class TestCase(unittest.TestCase):
         self.assertTrue(result)
     
     def test_blueCannon(self):
-        pass
+        j = JanggiGame()
+        result = j.make_move('b8', 'd6')
+        self.assertTrue(result)
 
     def test_blueSoldier(self):
         pass
