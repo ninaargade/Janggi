@@ -52,7 +52,7 @@ class TestCase(unittest.TestCase):
     
     def test_blueCannon(self):
         j = JanggiGame()
-        result = j.make_move('b8', 'd6')
+        result = j.make_move('b8', 'b1')
         self.assertTrue(result)
 
     def test_blueSoldier(self):
