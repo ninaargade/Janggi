@@ -6,6 +6,8 @@ game pieces, player turns, and game state. There is a method to make a move whic
 coordinates representing spaces on the board. There are many various helper functions that execute game play, and
 finally, there are methods to verify if a player is in check or checkmate, which indicates if the game has been won.
 
+You can read more about Janggi and game play rules here: https://en.wikipedia.org/wiki/Janggi
+
 Instructions to run Jenkins Pipeline:
 
 1. Install Docker on your local machine.
