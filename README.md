@@ -33,6 +33,6 @@ There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper techn
 
 9. Every time a change is committed to either Janggi.py or the unitTests.py file, run the "Build Now" button in Jenkins to see results for the "checkout", "build", and "test" stages of the pipeline. 
 
-From here, you can assess the logs to see if a part of the pipeline failed and troubleshoot from there. It is recommended to create a separate branch with changes and merge this branch into main *only* after the pipeline is sucessful for all stage.
+10. From here, you can assess the logs to see if a part of the pipeline failed and troubleshoot from there. It is recommended to create a separate branch with changes and merge this branch into main *only* after the pipeline is sucessful for all stage.
 
 
