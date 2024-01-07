@@ -17,14 +17,22 @@ There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper techn
 
 4. Go to localhost:8080 and enter password.
 
-5. While the docker container is running, run cmd: 
+5. Create a new Jenkins pipeline using this repository's Jenkinsfile for the pipeline script.
 
-docker ps to see what containers are running - copy the container ID for Jenkins, like 8f7c957e19fd
+6. While the docker container is running, run cmd: 
 
-6. Run command: docker exec -it -u 0 8f7c957e19fd /bin/bash to open an interactive terminal within the Docker Container as root (user 0)
+``docker ps to see what containers are running - copy the container ID for Jenkins, like 8f7c957e19fd``
 
-7. Run command: apt-get update and apt-get install python3 and apt-get install python3-pip to install Python3 and pip within the Docker container
+7. Run command: 
 
-8. Every time a unit test is committed to the unitTests.py file, run the "Build Now" button to see results for the "checkout", "build", and "test" stages of the pipeline.
+``docker exec -it -u 0 8f7c957e19fd /bin/bash to open an interactive terminal within the Docker Container as root (user 0)``
+
+8. Run command(s): 
+
+``apt-get update`` and ``apt-get install python3`` and ``apt-get install python3-pip`` to install Python3 and pip within the Docker container
+
+9. Every time a change is committed to either Janggi.py or the unitTests.py file, run the "Build Now" button in Jenkins to see results for the "checkout", "build", and "test" stages of the pipeline. 
+
+From here, you can assess the logs to see if a part of the pipeline failed and troubleshoot from there. It is recommended to create a separate branch with changes and merge this branch into main *only* after the pipeline is sucessful for all stage.
 
 
