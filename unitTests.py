@@ -10,6 +10,11 @@ class TestCase(unittest.TestCase):
         result = j.make_move('d10', 'd9')
         self.assertTrue(result)
 
+    def test_blueGeneral(self):
+        j = JanggiGame()
+        result = j.make_move('e9', 'e10')
+        self.assertTrue(result)
+
     def test_getTurn(self):
         j = JanggiGame()
         result = j.get_turn()
