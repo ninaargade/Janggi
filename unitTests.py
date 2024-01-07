@@ -10,8 +10,10 @@ class TestCase(unittest.TestCase):
         result = j.make_move('d10', 'd9')
         self.assertTrue(result)
 
-    def test2(self):
-        pass
+    def test_redGuard(self):
+        j = JanggiGame()
+        result = j.make_move('d1', 'b1')
+        self.assertTrue(result)
 
 if __name__ == '__main__':
     unittest.main()
