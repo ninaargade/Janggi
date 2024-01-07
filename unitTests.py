@@ -46,7 +46,9 @@ class TestCase(unittest.TestCase):
         self.assertTrue(result)
 
     def test_blueChariot(self):
-        pass
+        j = JanggiGame()
+        result = j.make_move('a10', 'a8')
+        self.assertTrue(result)
     
     def test_blueCannon(self):
         pass
