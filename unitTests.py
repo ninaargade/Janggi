@@ -42,7 +42,7 @@ class TestCase(unittest.TestCase):
 
     def test_blueElephant(self):
         j = JanggiGame()
-        result = j.make_move('b10', 'e8')
+        result = j.make_move('b10', 'd7')
         self.assertTrue(result)
 
     def test_blueChariot(self):
