@@ -12,7 +12,7 @@ class TestCase(unittest.TestCase):
 
     def test_redGuard(self):
         j = JanggiGame()
-        result = j.make_move('d1', 'b1')
+        result = j.make_move('d1', 'd2')
         self.assertTrue(result)
 
 if __name__ == '__main__':
