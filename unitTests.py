@@ -1,17 +1,16 @@
 import unittest
-unittest.TestLoader.sortTestMethodsUsing = None
 from Janggi import JanggiGame
 
 
 class TestCase(unittest.TestCase):
     """TestCase class inherits from unittest.TestCase to form different methods as test cases. """
 
-    def test_redGuard(self):
+    def test_1(self):
         j = JanggiGame()
         result = j.make_move('d10', 'd9')
         self.assertTrue(result)
 
-    def test_getTurn(self):
+    def test_2(self):
         j = JanggiGame()
         result = j.get_turn()
         self.assertEqual(result, 'Red')
