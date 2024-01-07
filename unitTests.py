@@ -56,6 +56,9 @@ class TestCase(unittest.TestCase):
         self.assertFalse(result)
 
     def test_blueSoldier(self):
-        pass
+        j = JanggiGame()
+        result = j.make_move('g7', 'g6')
+        self.assertTrue(result)
+
 if __name__ == '__main__':
     unittest.main()
