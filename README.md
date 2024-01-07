@@ -6,7 +6,7 @@ You can read more about Janggi and game play rules [here](https://en.wikipedia.o
 
 There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper technique for continuous delivery while developing the back-end. Using Jenkins, we can evaluate the unit tests in unitTests.py as we build the back-end of the game incrementally. The unitTests.py file utilizes the Python unitests framework and contains a test suite of valid player "moves." As we build our game and commit our changes, we can add corresponding tests and use Jenkins to ensure that we are writing valid code to our main branch.
 
-# Instructions to run Jenkins Pipeline:
+## Instructions to run Jenkins Pipeline:
 
 1. Install Docker on your local machine.
 2. Run this command: 
