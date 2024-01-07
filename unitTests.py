@@ -30,5 +30,26 @@ class TestCase(unittest.TestCase):
         result = j.is_in_checkmate_blue()
         self.assertFalse(result)
 
+    def test_blueHorse_False(self):
+        j = JanggiGame()
+        result = j.make_move('c10', 'b8')
+        self.assertFalse(result)
+
+    def test_blueHorse_True(self):
+        j = JanggiGame()
+        result = j.make_move('c10', 'd8')
+        self.assertFalse(result)
+
+    def test_blueElephant(self):
+        pass
+
+    def test_blueChariot(self):
+        pass
+    
+    def test_blueCannon(self):
+        pass
+
+    def test_blueSoldier(self):
+        pass
 if __name__ == '__main__':
     unittest.main()
