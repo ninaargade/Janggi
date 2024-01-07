@@ -22,13 +22,13 @@ class TestCase(unittest.TestCase):
 
     def test_isInCheck(self):
         j = JanggiGame()
-        result = j.is_in_check()
+        result = j.is_in_check("blue")
         self.assertFalse(result)
 
     def test_isInCheckmate_Blue(self):
         j = JanggiGame()
         result = j.is_in_checkmate_blue()
         self.assertFalse(result)
-        
+
 if __name__ == '__main__':
     unittest.main()
