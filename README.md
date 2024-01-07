@@ -11,7 +11,7 @@ There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper techn
 1. Install Docker on your local machine.
 2. Run this command: 
 
-``docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11``
+    ``docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11``
 
 3. Write down the password that is created during this first time set up process.
 
@@ -21,15 +21,15 @@ There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper techn
 
 6. While the docker container is running, run cmd: 
 
-``docker ps to see what containers are running - copy the container ID for Jenkins, like 8f7c957e19fd``
+    ``docker ps to see what containers are running - copy the container ID for Jenkins, like 8f7c957e19fd``
 
 7. Run command: 
 
-``docker exec -it -u 0 8f7c957e19fd /bin/bash to open an interactive terminal within the Docker Container as root (user 0)``
+    ``docker exec -it -u 0 8f7c957e19fd /bin/bash to open an interactive terminal within the Docker Container as root (user 0)``
 
 8. Run command(s): 
 
-``apt-get update`` and ``apt-get install python3`` and ``apt-get install python3-pip`` to install Python3 and pip within the Docker container
+    ``apt-get update`` and ``apt-get install python3`` and ``apt-get install python3-pip`` to install Python3 and pip within the Docker container
 
 9. Every time a change is committed to either Janggi.py or the unitTests.py file, run the "Build Now" button in Jenkins to see results for the "checkout", "build", and "test" stages of the pipeline. 
 
