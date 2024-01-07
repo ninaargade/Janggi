@@ -1888,3 +1888,4 @@ class JanggiGame:
                     return True
 
         return False  # if no legal move was made
+    
