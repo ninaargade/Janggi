@@ -11,7 +11,7 @@ There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper techn
 1. Install Docker on your local machine.
 2. Run this command: 
 
-<mark>docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11</mark>
+``docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11``
 
 3. Write down the password that is created during this first time set up process.
 
