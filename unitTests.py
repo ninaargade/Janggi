@@ -38,10 +38,12 @@ class TestCase(unittest.TestCase):
     def test_blueHorse_True(self):
         j = JanggiGame()
         result = j.make_move('c10', 'd8')
-        self.assertFalse(result)
+        self.assertTrue(result)
 
     def test_blueElephant(self):
-        pass
+        j = JanggiGame()
+        result = j.make_move('b10', 'e8')
+        self.assertTrue(result)
 
     def test_blueChariot(self):
         pass
