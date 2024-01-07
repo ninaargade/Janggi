@@ -1,18 +1,18 @@
 # Janggi
-___
 
-The following program contains a class that executes the game Janggi, which is the Korean version of
+The following Python program contains a class that executes the game Janggi, which is the Korean version of
 chess. The program represents the backend of the game, where there is a way for keeping track of the game board, game pieces, player turns, and game state. There is a method to make a move which takes in algebraic notation coordinates representing spaces on the board. There are many various helper functions that execute game play, and finally, there are methods to verify if a player is in check or checkmate, which indicates if the game has been won.
 
-You can read more about Janggi and game play rules [here](https://en.wikipedia.org/wiki/Janggi)
+You can read more about Janggi and game play rules [here](https://en.wikipedia.org/wiki/Janggi).
+
+There is a **Jenkins** pipeline included in a Jenkinsfile to ensure proper technique for continuous delivery while developing the back-end. Using Jenkins, we can evaluate the unit tests in unitTests.py as we build the back-end of the game incrementally. The unitTests.py file utilizes the Python unitests framework and contains a test suite of valid player "moves." As we build our game and commit our changes, we can add corresponding tests and use Jenkins to ensure that we are writing valid code to our main branch.
 
 # Instructions to run Jenkins Pipeline:
-___
 
 1. Install Docker on your local machine.
 2. Run this command: 
 
-docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11
+==docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11==
 
 3. Write down the password that is created during this first time set up process.
 
