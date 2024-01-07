@@ -12,7 +12,7 @@ class TestCase(unittest.TestCase):
 
     def test_getTurn(self):
         j = JanggiGame()
-        result = j.get_turn
+        result = j.get_turn()
         self.assertEqual(result, 'Red')
 
 if __name__ == '__main__':
